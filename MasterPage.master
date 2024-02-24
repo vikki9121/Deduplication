@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>DATA DEDUPLICATION</title>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.dropotron-1.0.js"></script>
+  
+      <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            height: 54px;
+            width: 976px;
+        }
+        .auto-style5 {
+            height: 293px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="wrapper">
+           <div id="header-wrapper">
+               <div id="header" class="auto-style6">
+                   <br />
+                   <br />  
+                   <br />
+                   <br />           
+
+				<h1 class="auto-style2">DATA DEDUPLICATION</h1>
+		</div>	
+               </div>
+           </div>
+    <div>
+       
+       <div id="menu-wrapper">
+		<ul id="menu">
+			<li class="Home.aspx"><a href="#"><span>Home</span></a></li>
+			<li><a href="login.aspx"><span>Dataowner</span></a></li>
+            
+            <li><a href="login.aspx"><span>User</span></a></li>           
+            <li><a href="Home.aspx"><span>Logout</span></a></li>
+		</ul>	
+		<script type="text/javascript">
+		    $('#menu').dropotron();
+		</script>
+	</div>
+        </div>
+
+       
+	<div id="page">
+		 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        </asp:ContentPlaceHolder>	
+    </div>
+    </form>
+</body>
+</html>

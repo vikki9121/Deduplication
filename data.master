@@ -1,0 +1,66 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="data.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style9 {
+        width: 136px;
+    }
+        .auto-style10 {
+            width: 751px;
+        }
+        .auto-style11 {
+            width: 99%;
+            height: 98px;
+        }
+        </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+   
+    <table class="auto-style6">
+    <tr>
+        <td class="auto-style9">
+            <table class="auto-style11">
+                <tr>
+                    <td>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">FILE UPLOAD</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">VIEW DATA</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">VIEW REQUEST</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">DELETE</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">LOGOUT</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="auto-style10">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <p>
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </td>
+        <td>
+            &nbsp;</td>
+    </tr>
+</table>
+   
+</asp:Content>
+
